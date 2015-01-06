@@ -1,0 +1,7 @@
+#!/bin/bash
+if [[ -z $1 ]]; then
+echo "You must specify a name of rpm"
+exit
+fi
+find /teams/smeserver -name "$1*"
+
